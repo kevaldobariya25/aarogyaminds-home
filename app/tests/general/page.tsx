@@ -197,7 +197,7 @@ export default function Component() {
           <Button 
             onClick={handlePreviousQuestion} 
             disabled={currentQuestionIndex === 0}
-            className={`flex items-center justify-center px-6 py-2 w-32 rounded-lg bg-gradient-to-r from-teal-400 to-teal-600 text-white shadow-md hover:from-teal-500 hover:to-teal-700 transition-all ${currentQuestionIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`flex items-center justify-center px-6 py-2 w-32 rounded-lg bg-gradient-to-r from-teal-500 to-teal-600 text-white shadow-md hover:from-teal-600 hover:to-teal-700 transition-all ${currentQuestionIndex === 0 ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             <ChevronLeft className="mr-2 h-4 w-4" />
             Previous
@@ -208,7 +208,7 @@ export default function Component() {
           <Button 
             onClick={handleNextQuestion} 
             disabled={!selectedAnswers[currentQuestionIndex]} // Ensure an answer is selected
-            className={`flex items-center justify-center px-6 py-2 w-32 rounded-lg bg-gradient-to-r from-teal-400 to-teal-600 text-white shadow-md hover:from-teal-500 hover:to-teal-700 transition-all ${!selectedAnswers[currentQuestionIndex] ? 'opacity-50 cursor-not-allowed' : ''}`}
+            className={`flex items-center justify-center px-6 py-2 w-32 rounded-lg bg-gradient-to-r from-teal-500 to-teal-600 text-white shadow-md hover:from-teal-600 hover:to-teal-700 transition-all ${!selectedAnswers[currentQuestionIndex] ? 'opacity-50 cursor-not-allowed' : ''}`}
           >
             {currentQuestionIndex < quizData.length - 1 ? (
               <>
